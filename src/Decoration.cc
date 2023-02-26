@@ -680,7 +680,7 @@ int Decoration::buttonPadding() const
 int Decoration::titleBarHeight() const
 {
     const QFontMetrics fontMetrics(settings()->font());
-    return buttonPadding()*2 + fontMetrics.height();
+    return buttonPadding()*5 + fontMetrics.height();
 }
 
 int Decoration::appMenuButtonHorzPadding() const
