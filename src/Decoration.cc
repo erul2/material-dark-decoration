@@ -271,7 +271,7 @@ void Decoration::init()
 
     // For some reason, the shadow should be installed the last. Otherwise,
     // the Window Decorations KCM crashes.
-    updateShadow();
+    // updateShadow();
 
     connect(settings().data(), &KDecoration2::DecorationSettings::reconfigured,
         this, &Decoration::reconfigure);
@@ -298,7 +298,7 @@ void Decoration::reconfigure()
     m_menuButtons->setAlwaysShow(m_internalSettings->menuAlwaysShow());
     updateButtonsGeometry();
     updateButtonAnimation();
-    updateShadow();
+    // updateShadow();
     update();
 }
 
